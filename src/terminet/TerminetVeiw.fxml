@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="754.0" prefWidth="1280.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="754.0" fitWidth="1280.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/terminetPhoto.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="23.0" layoutY="23.0" opacity="0.69" prefHeight="245.0" prefWidth="320.0" style="-fx-background-color: #82A29C;" styleClass="card-unpadded">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="320.0" spacing="20.0" style="-fx-background-color: #038082;">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/appoint.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="20.0" prefWidth="233.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17px;" text="Terminet Statistika" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="62.0" prefWidth="320.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="191.0" style="-fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold;" text="Gjitha Terminet">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar fx:id="PROG" progress="0.95" />
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 15pt; -fx-text-fill: white;" text="123" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="320.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="181.0" style="-fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold;" text="Terminet e perfunduar">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar progress="0.43" />
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 15pt; -fx-text-fill: white;" text="39" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="65.0" prefWidth="320.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="185.0" style="-fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold;" text="Terminet ne pritje">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar progress="0.37" />
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 15pt; -fx-text-fill: white;" text="45" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Pane layoutX="402.0" layoutY="460.0" opacity="0.79" prefHeight="295.0" prefWidth="795.0" styleClass="card-unpadded">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="795.0" spacing="20.0" style="-fx-background-color: #038082;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="26.0" prefWidth="431.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17px;" text="                                                      Shto Termin te Ri" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <JFXDatePicker fx:id="data_terminit" layoutX="44.0" layoutY="132.0" prefHeight="30.0" prefWidth="191.0" />
+            <JFXTextField fx:id="emri_txt" focusColor="#038082" labelFloat="true" layoutX="48.0" layoutY="63.0" maxWidth="320.0" minWidth="139.0" prefHeight="34.0" prefWidth="226.0" promptText="Emri Pacientit" unFocusColor="#038082" />
+            <JFXTextField fx:id="mbiemri_txt" focusColor="#038082" labelFloat="true" layoutX="297.0" layoutY="63.0" maxWidth="320.0" minWidth="139.0" prefHeight="34.0" prefWidth="226.0" promptText="Mbiemri pacientit" unFocusColor="#038082" />
+            <JFXTimePicker fx:id="koha_fillimit" layoutX="278.0" layoutY="132.0" prefHeight="30.0" prefWidth="137.0" />
+            <JFXTimePicker fx:id="koha_perfundimit" layoutX="469.0" layoutY="133.0" prefHeight="30.0" prefWidth="137.0" />
+            <JFXTextField fx:id="arsyetVizites_txt" focusColor="#038082" labelFloat="true" layoutX="32.0" layoutY="192.0" maxWidth="728.0" minWidth="139.0" prefHeight="30.0" prefWidth="728.0" promptText="Arsyet e vizites" unFocusColor="#038082" />
+            <JFXButton fx:id="shtoBtn" buttonType="RAISED" layoutX="222.0" layoutY="248.0" opacity="0.98" prefHeight="30.0" prefWidth="111.0" ripplerFill="#328f91" style="-fx-background-color: #328F91;" text="Shto" textFill="#fcf8f8" />
+            <JFXButton fx:id="editoBtn" buttonType="RAISED" layoutX="368.0" layoutY="248.0" opacity="0.98" prefHeight="29.0" prefWidth="101.0" ripplerFill="#0ff75e" style="-fx-background-color: #328F91;" text="Edito" textFill="#fcf8f8" />
+            <JFXComboBox fx:id="emri_dok" focusColor="#00a65a" labelFloat="true" layoutX="537.0" layoutY="67.0" prefHeight="30.0" prefWidth="233.0" promptText="Emri Doktorit" unFocusColor="#00a65a" />
+            <JFXButton fx:id="fshijeBtn" buttonType="RAISED" layoutX="493.0" layoutY="248.0" opacity="0.98" prefHeight="29.0" prefWidth="101.0" ripplerFill="#0ff75e" style="-fx-background-color: #328F91;" text="Fshije" textFill="#fcf8f8" />
+            <JFXButton fx:id="clearBtn" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutX="667.0" layoutY="243.0" maxHeight="35.0" maxWidth="80.0" minWidth="25.0" opacity="0.98" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #328F91;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Clear%20Symbol_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="21.0" layoutY="122.0" prefHeight="20.0" prefWidth="151.0" text="Data e Terminit" />
+            <Label layoutX="258.0" layoutY="122.0" prefHeight="20.0" prefWidth="151.0" text="Koha e fillimit" />
+            <Label layoutX="448.0" layoutY="122.0" prefHeight="20.0" prefWidth="151.0" text="Koha e perfundimit" />
+         </children>
+      </Pane>
+      <AnchorPane layoutX="343.0" layoutY="14.0" opacity="0.53" prefHeight="442.0" prefWidth="912.0" styleClass="card-unpadded">
+         <children>
+            <TitledPane animated="false" layoutX="3.0" layoutY="4.0" prefHeight="442.0" prefWidth="904.0" styleClass="blue-titledPane" text="Kerkim ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="329.0" prefWidth="902.0">
+                     <children>
+                        <TableView fx:id="terminet_table" layoutX="4.0" layoutY="14.0" prefHeight="396.0" prefWidth="890.0" styleClass="table-view">
+                          <columns>
+                            <TableColumn fx:id="col_emri" minWidth="150.0" prefWidth="150.0" text="Emri Pacientit" />
+                              <TableColumn fx:id="col_mbiemri" minWidth="150.0" prefWidth="100.0" text="Mbiemri Pacientit" />
+                              <TableColumn fx:id="col_dok" minWidth="150.0" prefWidth="93.0" text="Emri Doktorit" />
+                              <TableColumn fx:id="col_data" minWidth="150.0" prefWidth="74.0" text="Data Terminit" />
+                              <TableColumn fx:id="col_kohaFillimit" minWidth="150.0" prefWidth="81.0" text="Koha Fillimit" />
+                              <TableColumn fx:id="col_kohaPerfundimit" minWidth="150.0" prefWidth="128.0" text="Koha Perfundimit" />
+                              <TableColumn fx:id="col_arsyet" minWidth="150.0" prefWidth="150.0" text="Arsyet e Vizites" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="292.0" opacity="0.71" prefHeight="332.0" prefWidth="323.0" styleClass="card-unpadded">
+         <children>
+            <Label layoutX="101.0" layoutY="-1.0" prefHeight="30.0" prefWidth="178.0" text="Kriteret e Kerkimit" />
+            <TextField fx:id="kerko_field" layoutX="126.0" layoutY="52.0" prefHeight="29.0" prefWidth="191.0" promptText="Kerko" styleClass="search-box" />
+            <JFXCheckBox fx:id="dataTerminit_checkbox" ellipsisString="" graphicTextGap="0.0" layoutX="236.0" layoutY="108.0" prefHeight="20.0" prefWidth="10.0" />
+            <JFXDatePicker fx:id="data_fillimit_search" layoutX="141.0" layoutY="136.0" prefHeight="29.0" prefWidth="162.0" />
+            <Label layoutX="121.0" layoutY="108.0" prefHeight="20.0" prefWidth="101.0" text="Data e Terminit" />
+            <Label layoutX="14.0" layoutY="42.0" prefHeight="20.0" prefWidth="101.0" text="Emri i pacientit" />
+            <Label layoutX="14.0" layoutY="67.0" prefHeight="20.0" prefWidth="101.0" text="Emri i doktorit" />
+            <JFXButton fx:id="kerkoBtn" buttonType="RAISED" layoutX="172.0" layoutY="190.0" opacity="0.74" prefHeight="29.0" prefWidth="101.0" ripplerFill="#328f91" style="-fx-background-color: #328F91;" text="Kerko" textFill="#fcf8f8" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PolyClinicManagmentV2.0PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>dbManagment.Sherbimet</class>
+    <class>dbManagment.Klinika</class>
+    <class>dbManagment.Users</class>
+    <class>dbManagment.Vizitat</class>
+    <class>dbManagment.Staff</class>
+    <class>dbManagment.Pacienti</class>
+    <class>dbManagment.Sysdiagrams</class>
+    <class>dbManagment.Terminet</class>
+    <class>dbManagment.Pagesat</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=dbv2.1"/>
+      <property name="javax.persistence.jdbc.user" value="xoni"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="xoni123"/>
+    </properties>
+ 
+</persistence-unit>
+</persistence>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="754.0" prefWidth="1280.0" styleClass="card-unpadded" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTabPane fx:id="tabPane" layoutY="-1.0" prefHeight="754.0" prefWidth="1282.0">
+         <tabs>
+            <Tab text="                                              Menagjo Vizitat">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="754.0" fitWidth="1280.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/doctor-clipboard_1_orig.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="518.0" layoutY="14.0" opacity="0.74" prefHeight="577.0" prefWidth="731.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="71.0" prefWidth="731.0" style="-fx-background-color: #038082;">
+                                 <children>
+                                    <ImageView fitHeight="62.0" fitWidth="52.0" layoutX="196.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/add.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="251.0" layoutY="11.0" prefHeight="50.0" prefWidth="194.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17;" text="         Shto Vizite te Re" />
+                                 </children>
+                              </Pane>
+                              <JFXTextField fx:id="emri_field" focusColor="#038082" labelFloat="true" layoutX="14.0" layoutY="95.0" prefHeight="46.0" prefWidth="230.0" promptText="Emri i Pacientit" unFocusColor="#038082" />
+                              <JFXTextField fx:id="mbiemri_field" focusColor="#038082" labelFloat="true" layoutX="296.0" layoutY="95.0" prefHeight="46.0" prefWidth="230.0" promptText="Mbiemri i pacientit" unFocusColor="#038082" />
+                              <JFXDatePicker fx:id="data_lindjes_picker" defaultColor="#038082" editable="false" layoutX="17.0" layoutY="159.0" prefHeight="46.0" prefWidth="260.0" promptText="Data e Lindjes" />
+                              <JFXDatePicker fx:id="dataVizites_picker" defaultColor="#038082" editable="false" layoutX="296.0" layoutY="159.0" prefHeight="46.0" prefWidth="236.0" promptText="Data e Vizites" />
+                              <JFXTextField fx:id="anekesatPac_field" focusColor="#038082" labelFloat="true" layoutX="16.0" layoutY="233.0" prefHeight="46.0" prefWidth="692.0" promptText="Ankesat e Pacientit" unFocusColor="#038082" />
+                              <JFXTextField fx:id="vlersimiMjekut_field" focusColor="#038082" labelFloat="true" layoutX="16.0" layoutY="304.0" prefHeight="46.0" prefWidth="692.0" promptText="Vlersimi i Mjekut" unFocusColor="#038082" />
+                              <JFXTextField fx:id="diagnoza_field" focusColor="#038082" labelFloat="true" layoutX="16.0" layoutY="375.0" prefHeight="46.0" prefWidth="692.0" promptText="Diagnoza" unFocusColor="#038082" />
+                              <JFXTextField fx:id="terapia_field" focusColor="#038082" labelFloat="true" layoutX="16.0" layoutY="445.0" prefHeight="46.0" prefWidth="692.0" promptText="Terapia" unFocusColor="#038082" />
+                              <JFXTextField fx:id="rekomandimi_field" focusColor="#038082" labelFloat="true" layoutX="16.0" layoutY="518.0" prefHeight="46.0" prefWidth="692.0" promptText="Rekomandimi" unFocusColor="#038082" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="204.0" layoutY="49.0" opacity="0.64" prefHeight="537.0" prefWidth="239.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Pane opacity="0.78" prefHeight="52.0" prefWidth="239.0" style="-fx-background-color: #389496;">
+                                 <children>
+                                    <Label layoutX="23.0" layoutY="1.0" prefHeight="25.0" prefWidth="194.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17;" text="     Vizitat e kaluara" />
+                                    <Label fx:id="pacLabel" layoutX="55.0" layoutY="28.0" prefHeight="21.0" prefWidth="178.0" style="-fx-text-fill: white; -fx-font-size: 15;" />
+                                 </children>
+                              </Pane>
+                              <TableView fx:id="table_datat_vizitave" layoutY="52.0" prefHeight="477.0" prefWidth="239.0" stylesheets="@../styles/styles.css">
+                                 <columns>
+                                    <TableColumn fx:id="col_data_vizitave" prefWidth="239.0" text="Datat e vizitave" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                        <JFXButton fx:id="shtoBtn" layoutX="655.0" layoutY="601.0" opacity="0.8" prefHeight="44.0" prefWidth="95.0" ripplerFill="#14b2b5" stylesheets="@../styles/logincss.css" text="Ruaj" />
+                        <JFXButton fx:id="editBtn" layoutX="779.0" layoutY="601.0" opacity="0.8" prefHeight="44.0" prefWidth="95.0" ripplerFill="#14b2b5" stylesheets="@../styles/logincss.css" text="Edito" />
+                        <JFXButton fx:id="fshijeBtn" layoutX="903.0" layoutY="601.0" opacity="0.8" prefHeight="44.0" prefWidth="95.0" ripplerFill="#14b2b5" stylesheets="@../styles/logincss.css" text="Fshije" />
+                        <JFXButton fx:id="clearBtn" ellipsisString="" graphicTextGap="0.0" layoutX="1033.0" layoutY="602.0" prefHeight="42.0" prefWidth="82.0" style="-fx-background-color: #328F91;" text="             ">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="51.0" mouseTransparent="true" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../images/Clear%20Symbol_52px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="reportBtn" buttonType="RAISED" layoutX="801.0" layoutY="659.0" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #328F91;" text="Shfaq Raportin" textFill="#fcf8f8">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Lista e Vizitave">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="754.0" fitWidth="1280.0" opacity="0.58" pickOnBounds="true" preserveRatio="true" styleClass="ta">
+                           <image>
+                              <Image url="@../images/doctor-clipboard_1_orig.jpg" />
+                           </image>
+                        </ImageView>
+                        <TitledPane animated="false" layoutX="330.0" layoutY="134.0" opacity="0.77" prefHeight="553.0" prefWidth="810.0" styleClass="blue-titledPane" stylesheets="@../styles/styles.css" text="Vizitat">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="526.0" prefWidth="844.0">
+                                 <children>
+                                    <TableView fx:id="vizitat_table" layoutY="1.0" prefHeight="525.0" prefWidth="804.0">
+                                      <columns>
+                                        <TableColumn fx:id="col_emriPac" prefWidth="200.0" text="Emri Pacientit" />
+                                        <TableColumn fx:id="col_mbiermiPac" prefWidth="200.0" text="Mbiermi Pacientit" />
+                                          <TableColumn fx:id="col_DataLindjes" prefWidth="200.0" text="Data e Lindjes" />
+                                          <TableColumn fx:id="col_Doktori" prefWidth="200.0" text="Doktori" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <Pane layoutX="579.0" layoutY="7.0" opacity="0.75" prefHeight="121.0" prefWidth="312.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+                           <children>
+                              <HBox opacity="0.78" prefHeight="46.0" prefWidth="312.0" style="-fx-background-color: #389496;">
+                                 <children>
+                                    <ImageView fitHeight="62.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/pacienteticon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="50.0" prefWidth="194.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17;" text="       Kerko pacientin" />
+                                 </children>
+                              </HBox>
+                              <JFXTextField fx:id="searchField" focusColor="#00a0f3" labelFloat="true" layoutX="14.0" layoutY="56.0" prefHeight="46.0" prefWidth="230.0" promptText="Emri i Pacientit" unFocusColor="#00a0f3" />
+                              <ImageView fitHeight="37.0" fitWidth="46.0" layoutX="244.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/search.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

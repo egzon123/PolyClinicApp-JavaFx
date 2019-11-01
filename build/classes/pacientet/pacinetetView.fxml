@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="754.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <JFXTabPane fx:id="tabPane" layoutY="-2.0" prefHeight="754.0" prefWidth="1280.0" stylesheets="@../styles/styles.css">
+            <tabs>
+                <Tab text="                                                 Menagjo pacientat">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1512.0">
+                            <children>
+                                <Pane prefHeight="720.0" prefWidth="1280.0">
+                                    <children>
+                                        <ImageView fitHeight="725.0" fitWidth="1280.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/wllpac.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Text fill="#038082" layoutX="276.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGJISTRO PACIENTË">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="493.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/ADDPACIENT.png" />
+                                            </image>
+                                        </ImageView>
+                                        <JFXTextField fx:id="emri_txt" focusColor="#15b1b5" labelFloat="true" layoutX="225.0" layoutY="139.0" prefHeight="31.0" prefWidth="177.0" promptText="Emri" unFocusColor="#15b1b5" />
+                                        <JFXTextField fx:id="mbiemri_txt" focusColor="#15b1b5" labelFloat="true" layoutX="447.0" layoutY="139.0" prefHeight="31.0" prefWidth="177.0" promptText="Mbiemri" unFocusColor="#15b1b5" />
+                                        <JFXTextField fx:id="vendlindja_txt" focusColor="#15b1b5" labelFloat="true" layoutX="225.0" layoutY="197.0" prefHeight="31.0" prefWidth="177.0" promptText="Vendlinja" unFocusColor="#15b1b5" />
+                                        <JFXTextField fx:id="emriPrindit_txt" focusColor="#15b1b5" labelFloat="true" layoutX="666.0" layoutY="139.0" prefHeight="31.0" prefWidth="177.0" promptText="Emri Prindit" unFocusColor="#15b1b5" />
+                                        <JFXTextField fx:id="shteti_txt" focusColor="#15b1b5" labelFloat="true" layoutX="447.0" layoutY="197.0" prefHeight="31.0" prefWidth="177.0" promptText="Shteti" unFocusColor="#15b1b5" />
+                                        <JFXTextField fx:id="qyteti_txt" focusColor="#15b1b5" labelFloat="true" layoutX="666.0" layoutY="197.0" prefHeight="31.0" prefWidth="177.0" promptText="Qyteti" unFocusColor="#15b1b5" />
+                                        <JFXTextField fx:id="adresa_txt" focusColor="#15b1b5" labelFloat="true" layoutX="225.0" layoutY="258.0" prefHeight="31.0" prefWidth="177.0" promptText="Adresa" unFocusColor="#15b1b5" />
+                                        <JFXTextField fx:id="tel_txt" focusColor="#15b1b5" labelFloat="true" layoutX="447.0" layoutY="258.0" prefHeight="31.0" prefWidth="177.0" promptText="Tel" unFocusColor="#15b1b5" />
+                                        <JFXTextField fx:id="email_txt" focusColor="#15b1b5" labelFloat="true" layoutX="666.0" layoutY="258.0" prefHeight="31.0" prefWidth="177.0" promptText="Email" unFocusColor="#15b1b5" />
+                                        <JFXTextArea fx:id="alergjit_txt" focusColor="#15b1b5" labelFloat="true" layoutX="225.0" layoutY="408.0" prefHeight="69.0" prefWidth="401.0" promptText="Alergjite" unFocusColor="#15b1b5" />
+                                        <JFXTextArea fx:id="infoShtes_txt" focusColor="#15b1b5" labelFloat="true" layoutX="223.0" layoutY="525.0" prefHeight="69.0" prefWidth="405.0" promptText="Info Shtes" unFocusColor="#15b1b5" />
+                                        <JFXDatePicker fx:id="data_picker" defaultColor="#15b1b5" editable="false" layoutX="659.0" layoutY="312.0" promptText="Data e Lindjes" />
+                                        <Label layoutX="666.0" layoutY="439.0" prefHeight="21.0" prefWidth="54.0" text="Gjinia">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXComboBox fx:id="doktori_combobox" focusColor="#15b1b5" labelFloat="true" layoutX="651.0" layoutY="494.0" prefHeight="31.0" prefWidth="191.0" promptText="Doktori" unFocusColor="#15b1b5" />
+                                        <JFXComboBox fx:id="klinika_combobox" focusColor="#15b1b5" labelFloat="true" layoutX="651.0" layoutY="563.0" prefHeight="31.0" prefWidth="191.0" promptText="Klinika" unFocusColor="#15b1b5" />
+                                        <JFXButton fx:id="editBtn" layoutX="514.0" layoutY="630.0" opacity="0.8" prefHeight="44.0" prefWidth="93.0" ripplerFill="#14b2b5" stylesheets="@../styles/logincss.css" text="Edito" />
+                                        <JFXButton fx:id="ruajBtn" layoutX="371.0" layoutY="630.0" opacity="0.8" prefHeight="44.0" prefWidth="95.0" ripplerFill="#14b2b5" stylesheets="@../styles/logincss.css" text="Ruaj" />
+                                        <JFXComboBox fx:id="grupi_gjakut" focusColor="#15b1b5" labelFloat="true" layoutX="663.0" layoutY="366.0" prefHeight="31.0" prefWidth="190.0" promptText="Grupi gjakut" unFocusColor="#15b1b5" />
+                                        <Pane layoutX="992.0" layoutY="33.0" opacity="0.57" prefHeight="161.0" prefWidth="265.0" style="-fx-background-color: #15B1B5;" styleClass="card-unpadded">
+                                            <children>
+                                                <ImageView fitHeight="88.0" fitWidth="136.0" layoutX="89.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/patient_group-512.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <Label layoutX="14.0" layoutY="115.0" prefHeight="21.0" prefWidth="218.0" text="Pacient te regjistruar">
+                                                    <font>
+                                                        <Font name="System Bold" size="17.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label fx:id="countLabelPac" layoutX="191.0" layoutY="115.0" prefHeight="21.0" prefWidth="47.0" text="245">
+                                                    <font>
+                                                        <Font size="17.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <JFXTextArea fx:id="semundjeKoronike_txt" focusColor="#15b1b5" labelFloat="true" layoutX="225.0" layoutY="308.0" prefHeight="81.0" prefWidth="401.0" promptText="Semundje kronike" unFocusColor="#15b1b5" />
+                                        <ImageView fitHeight="721.0" fitWidth="220.0" layoutY="4.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/barimage.png" />
+                                            </image>
+                                        </ImageView>
+                                        <HBox layoutX="725.0" layoutY="439.0" prefHeight="34.0" prefWidth="128.0">
+                                            <children>
+                                                <JFXRadioButton fx:id="gjinia_M" prefHeight="21.0" prefWidth="58.0" selected="true" text="M" textFill="#15b1b5">
+                                                    <toggleGroup>
+                                                        <ToggleGroup fx:id="q" />
+                                                    </toggleGroup>
+                                                </JFXRadioButton>
+                                                <JFXRadioButton fx:id="gjinia_F" prefHeight="21.0" prefWidth="58.0" text="F" textFill="#15b1b5" toggleGroup="$q" />
+                                            </children>
+                                        </HBox>
+                                        <JFXButton fx:id="clearBtn" ellipsisString="" layoutX="789.0" layoutY="627.0" opacity="0.8" prefHeight="54.0" prefWidth="62.0" ripplerFill="#14b2b5" stylesheets="@../styles/logincss.css" text="                   ">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/Clear%20Symbol_52px.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Lista e pacientave">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1227.0">
+                   
+                            <children>
+                                <Pane prefHeight="717.0" prefWidth="1280.0">
+                                    <children>
+                                        <ImageView fitHeight="724.0" fitWidth="1280.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/wllpac.png" />
+                                            </image>
+                                        </ImageView>
+                                        <TitledPane animated="false" layoutX="226.0" layoutY="68.0" opacity="0.75" prefHeight="576.0" prefWidth="1049.0" styleClass="blue-titledPane" stylesheets="@../styles/styles.css" text="Pacientet">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="533.0" prefWidth="1247.0">
+                                                            <children>
+                                                                <TableView fx:id="pac_table" layoutY="-4.0" opacity="0.68" prefHeight="541.0" prefWidth="1041.0">
+                                                                    <columns>
+                                                                        <TableColumn fx:id="col_emri" minWidth="100.0" prefWidth="100.0" text="Emri" />
+                                                                        <TableColumn fx:id="col_mbiemri" minWidth="100.0" prefWidth="100.0" text="Mbiemri" />
+                                                                        <TableColumn fx:id="col_emriPrindit" minWidth="100.0" prefWidth="100.0" text="Emri Prindit" />
+                                                                        <TableColumn fx:id="col_gjinia" minWidth="100.0" prefWidth="100.0" text="Gjinia" />
+                                                                        <TableColumn fx:id="col_datalindjes" minWidth="100.0" prefWidth="100.0" text="Data Lindjes" />
+                                                                        <TableColumn fx:id="col_shteti" minWidth="100.0" prefWidth="100.0" text="Shteti" />
+                                                                        <TableColumn fx:id="col_qyteti" minWidth="100.0" prefWidth="100.0" text="Qyteti" />
+                                                                        <TableColumn fx:id="col_vendlindja" minWidth="100.0" prefWidth="100.0" text="Vendlindja" />
+                                                                        <TableColumn fx:id="col_adresa" minWidth="100.0" prefWidth="100.0" text="Adresa" />
+                                                                        <TableColumn fx:id="col_tel" minWidth="100.0" prefWidth="100.0" text="Tel" />
+                                                                        <TableColumn fx:id="col_email" minWidth="100.0" prefWidth="100.0" text="Email" />
+                                                                        <TableColumn fx:id="col_semKronike" minWidth="100.0" prefWidth="100.0" text="Semundje Konike" />
+                                                                        <TableColumn fx:id="col_grupiGjakut" minWidth="100.0" prefWidth="100.0" text="Grupi Gjakut" />
+                                                                        <TableColumn fx:id="col_alergjit" minWidth="100.0" prefWidth="100.0" text="Alergjite" />
+                                                                        <TableColumn fx:id="col_infoShtes" minWidth="100.0" prefWidth="100.0" text="Info shtes" />
+                                                                    </columns>
+                                                                </TableView>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </TitledPane>
+                                        <JFXButton fx:id="fshijBtn" layoutX="640.0" layoutY="654.0" opacity="0.8" prefHeight="40.0" prefWidth="122.0" stylesheets="@../styles/logincss.css" text="FSHIJ" />
+                                        <ImageView fitHeight="734.0" fitWidth="209.0" layoutX="2.0" layoutY="2.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/barimage.png" />
+                                            </image>
+                                        </ImageView>
+                                        <JFXTextField fx:id="search_txt" focusColor="#15b1b5" layoutX="977.0" layoutY="14.0" prefHeight="44.0" prefWidth="232.0" promptText="Kerko Pacientin" style="-fx-focus-traversable: red;" styleClass="search-box" stylesheets="@../styles/styles.css" unFocusColor="#15b1b5" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="39.0" layoutY="20.0" prefHeight="560.0" prefWidth="643.0">
+         <children>
+            <JFXListView fx:id="listaSherbimeve" layoutY="38.0" prefHeight="467.0" prefWidth="290.0" />
+            <JFXTextField fx:id="sherbimiText" focusColor="#57aaab" labelFloat="true" layoutX="302.0" layoutY="27.0" prefHeight="46.0" prefWidth="324.0" promptText="Sherbimi" unFocusColor="#57aaab" />
+            <JFXTextField fx:id="shumaSherbimitText" focusColor="#57aaab" labelFloat="true" layoutX="302.0" layoutY="118.0" prefHeight="37.0" prefWidth="100.0" unFocusColor="#57aaab" />
+            <Label layoutX="413.0" layoutY="119.0" prefHeight="31.0" prefWidth="18.0" text="€">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="shtoSherbiminBtn" layoutX="309.0" layoutY="199.0" minWidth="150.0" prefHeight="37.0" prefWidth="173.0" style="-fx-background-color: #57AAAB;" styleClass="green-btn" stylesheets="@../styles/styles.css" text="Shto Sherbimin" />
+            <JFXButton fx:id="fshijeNgaListaBtn" layoutX="145.0" layoutY="516.0" minWidth="150.0" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #57AAAB;" styleClass="green-btn" stylesheets="@../styles/styles.css" text="Fshije nga lista" />
+            <JFXButton fx:id="shtoTeListaBtn" layoutX="7.0" layoutY="516.0" minWidth="121.0" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: #57AAAB;" styleClass="green-btn" stylesheets="@../styles/styles.css" text="Shto te lista" />
+            <JFXListView fx:id="listaESherbimeveTe" layoutX="322.0" layoutY="319.0" prefHeight="205.0" prefWidth="274.0" />
+            <JFXButton fx:id="fshijeBtn" layoutX="486.0" layoutY="199.0" minWidth="83.0" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #57AAAB;" styleClass="green-btn" stylesheets="@../styles/styles.css" text="Fshije" />
+            <Label layoutX="309.0" layoutY="98.0" prefHeight="21.0" prefWidth="130.0" text="Shuma e sherbimit" />
+            <Label layoutX="50.0" layoutY="4.0" prefHeight="21.0" prefWidth="208.0" text="Lista e sherbimieve" textFill="#57aaab">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

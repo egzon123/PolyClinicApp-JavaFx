@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="754.0" prefWidth="1280.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTabPane fx:id="tabPane" layoutX="138.0" layoutY="100.0" prefHeight="684.0" prefWidth="1105.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="                                        MENAGJO STAFIN">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="716.0" fitWidth="1280.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/docviews.jpg" />
+                           </image>
+                        </ImageView>
+                        <HBox layoutX="179.0" layoutY="33.0" opacity="0.64" prefHeight="169.0" prefWidth="948.0" spacing="30.0">
+                           <children>
+                              <AnchorPane fx:id="check" prefHeight="169.0" prefWidth="354.0" style="-fx-background-color: #83B7B6;" styleClass="card-unpadded">
+                                 <children>
+                                    <Pane layoutX="-1.0" opacity="0.37" prefHeight="169.0" prefWidth="39.0" style="-fx-background-color: #215F60;" />
+                                    <ImageView fitHeight="135.0" fitWidth="97.0" layoutX="46.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/doctor.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="289.0" layoutY="29.0" prefHeight="48.0" prefWidth="42.0" style="-fx-font-weight: bold;" styleClass="custom-white-title-label" text="16" />
+                                    <Label layoutX="143.0" layoutY="37.0" prefHeight="31.0" prefWidth="151.0" style="-fx-font-weight: bold; -fx-font-size: 16;" styleClass="custom-white-title-label" text="Doktore regjistruar" />
+                                    <Label layoutX="143.0" layoutY="85.0" prefHeight="31.0" prefWidth="107.0" style="-fx-font-weight: bold; -fx-font-size: 16;" styleClass="custom-white-title-label" text="Staff teknik" />
+                                    <Label layoutX="289.0" layoutY="77.0" prefHeight="48.0" prefWidth="42.0" style="-fx-font-weight: bold;" styleClass="custom-white-title-label" text="2" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="169.0" prefWidth="364.0" style="-fx-background-color: #DD4B39;" styleClass="card-unpadded">
+                                 <children>
+                                    <Pane layoutX="-1.0" prefHeight="166.0" prefWidth="37.0" style="-fx-background-color: #C74433;" />
+                                    <ImageView fitHeight="125.0" fitWidth="124.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Appointment.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="191.0" layoutY="14.0" prefHeight="67.0" prefWidth="41.0" styleClass="custom-white-title-label" text="57  " />
+                                    <Label layoutX="141.0" layoutY="76.0" prefHeight="31.0" prefWidth="210.0" styleClass="custom-white-label" text="Termine te paperfunduara" />
+                                    <JFXProgressBar layoutX="141.0" layoutY="120.0" progress="0.52" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="157.0" prefWidth="205.0" style="-fx-background-color: #83B7B6;" styleClass="card">
+                                 <children>
+                                    <VBox layoutX="14.0" layoutY="14.0" opacity="0.75" prefHeight="85.0" prefWidth="159.0">
+                                       <children>
+                                          <Label prefHeight="31.0" prefWidth="153.0" styleClass="custom-white-title-label" text="Sot" />
+                                          <Label prefHeight="20.0" prefWidth="152.0" styleClass="custom-white-title-label" text="E Marte" />
+                                          <Label prefHeight="20.0" prefWidth="151.0" styleClass="custom-white-title-label" text="12/07/2018" />
+                                       </children>
+                                    </VBox>
+                                    <ImageView fitHeight="31.0" fitWidth="50.0" layoutX="143.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Copyright.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <AnchorPane layoutX="179.0" layoutY="224.0" opacity="0.75" prefHeight="413.0" prefWidth="1057.0" styleClass="card-unpadded">
+                           <children>
+                              <JFXTextField fx:id="emri_txt" focusColor="#328f91" labelFloat="true" layoutX="26.0" layoutY="59.0" prefHeight="30.0" prefWidth="236.0" promptText="Emri" unFocusColor="#328f91" />
+                              <JFXTextField fx:id="mbiemri_txt" focusColor="#328f91" labelFloat="true" layoutX="27.0" layoutY="101.0" prefHeight="30.0" prefWidth="234.0" promptText="Mbiemri" unFocusColor="#328f91" />
+                              <JFXTextField fx:id="email_txt" focusColor="#328f91" labelFloat="true" layoutX="28.0" layoutY="146.0" prefHeight="30.0" prefWidth="233.0" promptText="Email" unFocusColor="#328f91" />
+                              <JFXTextField fx:id="tel_txt" focusColor="#328f91" labelFloat="true" layoutX="27.0" layoutY="190.0" prefHeight="30.0" prefWidth="234.0" promptText="Tel" unFocusColor="#328f91" />
+                              <JFXTextField fx:id="numriIdentitetit_txt" focusColor="#328f91" labelFloat="true" layoutX="28.0" layoutY="233.0" prefHeight="30.0" prefWidth="245.0" promptText="Numri i Identitetit" unFocusColor="#328f91" />
+                              <JFXTextArea fx:id="teDhenaShtes_txt" focusColor="#328f91" layoutX="26.0" layoutY="279.0" maxWidth="404.0" minWidth="279.0" prefHeight="93.0" prefWidth="286.0" promptText="Te dhena shtes" unFocusColor="#328f91" />
+                              <VBox layoutX="525.0" layoutY="17.0" prefHeight="376.0" prefWidth="511.0" spacing="10.0">
+                                 <children>
+                                    <VBox layoutX="30.0" layoutY="30.0" prefHeight="82.0" prefWidth="541.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: #868282; -fx-font-size: 16;" text="Lloji" />
+                                          <JFXComboBox fx:id="lloji_combo" focusColor="#328f91" prefHeight="40.0" prefWidth="494.0" unFocusColor="#328f91">
+                                             <VBox.margin>
+                                                <Insets left="100.0" />
+                                             </VBox.margin>
+                                          </JFXComboBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="82.0" prefWidth="541.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: #868282; -fx-font-size: 16;" text="Specializimi" />
+                                          <JFXComboBox fx:id="specializimi_combo" focusColor="#328f91" prefHeight="40.0" prefWidth="494.0" unFocusColor="#328f91">
+                                             <VBox.margin>
+                                                <Insets left="100.0" />
+                                             </VBox.margin>
+                                          </JFXComboBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="541.0">
+                                       <children>
+                                          <Label prefHeight="24.0" prefWidth="112.0" style="-fx-text-fill: #868282; -fx-font-size: 16;" text="Klinika" />
+                                          <JFXComboBox fx:id="klinika_combo" focusColor="#328f91" prefHeight="40.0" prefWidth="499.0" unFocusColor="#328f91">
+                                             <VBox.margin>
+                                                <Insets left="100.0" />
+                                             </VBox.margin>
+                                          </JFXComboBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="92.0" prefHeight="55.0" prefWidth="491.0">
+                                       <children>
+                                          <JFXToggleButton fx:id="mbanTermine_toggle" text="Mban Termine" />
+                                       </children>
+                                    </VBox>
+                                    <Separator prefWidth="200.0" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="77.0" prefWidth="511.0" spacing="20.0">
+                                       <children>
+                                          <JFXButton fx:id="ruajBtn" buttonType="RAISED" ellipsisString="" layoutX="72.0" layoutY="10.0" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #328F91;" text="                   ">
+                                             <graphic>
+                                                <Label mouseTransparent="true" prefHeight="20.0" prefWidth="61.0" style="-fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold;" text="      Ruaj" />
+                                             </graphic></JFXButton>
+                                          <JFXButton fx:id="editoBtn1" buttonType="RAISED" ellipsisString="" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #328F91;" text="          ">
+                                             <graphic>
+                                                <Label mouseTransparent="true" prefHeight="22.0" prefWidth="76.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-text-fill: white;" text="      Edito" />
+                                             </graphic></JFXButton>
+                                          <JFXButton fx:id="clearBtn" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" ellipsisString="" maxHeight="35.0" maxWidth="80.0" prefHeight="35.0" prefWidth="68.0" style="-fx-background-color: #83B7B6;">
+                                             <graphic>
+                                                <ImageView fitHeight="31.0" fitWidth="55.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/Clear%20Symbol_52px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic></JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets right="20.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="20.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="DETAJE">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.6173228346456693" layoutX="16.0" layoutY="6.0" orientation="VERTICAL" prefHeight="649.0" prefWidth="1105.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="1278.0">
+                                 <children>
+                                    <ImageView fitHeight="456.0" fitWidth="1280.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/docviewsD.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <TableView fx:id="staf_table" layoutX="173.0" layoutY="67.0" opacity="0.71" prefHeight="359.0" prefWidth="1080.0">
+                                       <columns>
+                                          <TableColumn fx:id="col_emri" prefWidth="120.0" text="Emri" />
+                                          <TableColumn fx:id="col_mbiemri" prefWidth="120.0" text="Mbiemri" />
+                                          <TableColumn fx:id="col_email" prefWidth="120.0" text="Email" />
+                                          <TableColumn fx:id="col_tel" prefWidth="120.0" text="Tel" />
+                                          <TableColumn fx:id="col_nrI" prefWidth="120.0" text="Nr.identifikimit" />
+                                          <TableColumn fx:id="col_lloji" prefWidth="120.0" text="Lloji" />
+                                          <TableColumn fx:id="col_specializimi" prefWidth="120.0" text="Specializimi" />
+                                          <TableColumn fx:id="col_klinika" prefWidth="120.0" text="Klinika" />
+                                          <TableColumn fx:id="col_mbanTermine" prefWidth="120.0" text="Mban Termine?" />
+                                          <TableColumn fx:id="col_teDhenaShtes" prefWidth="120.0" text="Te dhena shtes" />
+                                       </columns></TableView>
+                                    <JFXTextField fx:id="search_txt" focusColor="#83b7b6" layoutX="906.0" layoutY="22.0" prefHeight="30.0" prefWidth="255.0" promptText="Kerko punetoret" styleClass="search-box" unFocusColor="#83b7b6" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="240.0" prefWidth="1103.0" style="-fx-background-color: #D4E7E6;">
+                                 <children>
+                                    <HBox layoutX="182.0" layoutY="14.0" prefHeight="184.0" prefWidth="1043.0" spacing="30.0">
+                                       <children>
+                                          <GridPane opacity="0.71" prefHeight="170.0" prefWidth="493.0" styleClass="card">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="106.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="321.0" minWidth="10.0" prefWidth="321.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="Te dhenat personale" />
+                                                <Label prefHeight="20.0" prefWidth="83.0" text="Kontakti" GridPane.rowIndex="4" />
+                                                <Label fx:id="nrIden_label" prefHeight="20.0" prefWidth="300.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <Label fx:id="lloji_label" prefHeight="20.0" prefWidth="300.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" />
+                                                <Label fx:id="emri_label" prefHeight="20.0" prefWidth="300.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label fx:id="mbiemri_label" prefHeight="20.0" prefWidth="300.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label fx:id="tel_label" prefHeight="20.0" prefWidth="300.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <Label fx:id="email_label" prefHeight="20.0" prefWidth="300.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                             </children>
+                                          </GridPane>
+                                          <GridPane maxHeight="150.0" opacity="0.7" prefHeight="122.0" prefWidth="475.0" styleClass="card">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="186.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.0" minWidth="10.0" prefWidth="302.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="Specializimi" />
+                                                <Label text="Mban termine?" GridPane.rowIndex="2" />
+                                                <Label fx:id="specializimi_label" prefHeight="20.0" prefWidth="280.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" />
+                                                <Label fx:id="klinika_label" prefHeight="20.0" prefWidth="280.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label fx:id="mbanTermine_label" prefHeight="20.0" prefWidth="279.0" style="-fx-background-color: #83B7B6;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label layoutX="26.0" layoutY="36.0" text="Klinika" GridPane.rowIndex="1" />
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </HBox>
+                                    <JFXButton fx:id="editBtn2" buttonType="RAISED" ellipsisString="" layoutX="752.0" layoutY="196.0" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #328F91;" text="          ">
+                                       <graphic>
+                                          <Label mouseTransparent="true" prefHeight="22.0" prefWidth="76.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-text-fill: white;" text="     Edito" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="fshijBtn" buttonType="RAISED" ellipsisString="" layoutX="891.0" layoutY="196.0" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #328F91;" text="          ">
+                                       <graphic>
+                                          <Label mouseTransparent="true" prefHeight="22.0" prefWidth="76.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-text-fill: white;" text="     Fshij" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

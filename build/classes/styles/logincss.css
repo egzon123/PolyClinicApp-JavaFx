@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 23, 2018, 1:56:01 PM
+    Author     : Toshiba
+*/
+
+.button{
+    -fx-font-weight: bold;
+    -fx-background-color: #038082;
+    -fx-background-radius: 5;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #3CBFC2;
+    -fx-background-radius: 5;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+}
+.button:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: #3CBFC4;
+    -fx-background-radius: 5;
+    -fx-font-size: 19;
+    -fx-text-fill: white;
+}

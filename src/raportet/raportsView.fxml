@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="754.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="raportet.RaportsViewController">
+   <children>
+      <ImageView fitHeight="754.0" fitWidth="1280.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/reportImages.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="157.0" layoutY="52.0" opacity="0.71" prefHeight="157.0" prefWidth="312.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+         <children>
+            <HBox opacity="0.99" prefHeight="46.0" prefWidth="312.0" style="-fx-background-color: #389496;">
+               <children>
+                  <ImageView fitHeight="62.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/pacienteticon.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="50.0" prefWidth="194.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17;" text="       Kerko pacientin" />
+               </children>
+            </HBox>
+            <JFXTextField focusColor="#00a0f3" labelFloat="true" layoutX="8.0" layoutY="80.0" prefHeight="46.0" prefWidth="230.0" promptText="Emri i Pacientit" unFocusColor="#00a0f3" />
+            <ImageView fitHeight="37.0" fitWidth="46.0" layoutX="238.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="521.0" layoutY="52.0" opacity="0.59" prefHeight="451.0" prefWidth="239.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+         <children>
+            <Pane opacity="0.94" prefHeight="52.0" prefWidth="239.0" style="-fx-background-color: #389496;">
+               <children>
+                  <Label layoutX="59.0" layoutY="1.0" prefHeight="50.0" prefWidth="140.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17;" text="Vizitat e kaluara" />
+               </children>
+            </Pane>
+            <TableView layoutY="52.0" prefHeight="399.0" prefWidth="239.0" stylesheets="@../styles/styles.css">
+               <columns>
+                  <TableColumn prefWidth="239.0" text="Datat e vizites" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="157.0" layoutY="238.0" opacity="0.53" prefHeight="431.0" prefWidth="319.0">
+         <children>
+            <Pane opacity="0.78" prefHeight="52.0" prefWidth="319.0" style="-fx-background-color: #389496;">
+               <children>
+                  <Label layoutX="40.0" layoutY="1.0" prefHeight="50.0" prefWidth="194.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17;" text="              Cakto Pacientin" />
+               </children>
+            </Pane>
+            <TableView layoutY="52.0" prefHeight="379.0" prefWidth="319.0" stylesheets="@../styles/styles.css">
+              <columns>
+                <TableColumn prefWidth="105.0" text="Emri" />
+                <TableColumn prefWidth="93.0" text="Mbiermi" />
+                  <TableColumn prefWidth="120.0" text="Data Lindjes" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="820.0" layoutY="52.0" opacity="0.75" prefHeight="673.0" prefWidth="448.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+         <children>
+            <Pane opacity="0.79" prefHeight="673.0" prefWidth="52.0" style="-fx-background-color: #389496;" />
+            <Label layoutX="85.0" layoutY="43.0" prefHeight="35.0" prefWidth="354.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css" text="Gjenero Raportin e Viziten se Selektuar" textFill="#40b6f3">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="107.0" prefHeight="35.0" prefWidth="354.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css" text="Gjenero Raportin e Profilit te Pacientit" textFill="#40b6f3">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Line endX="241.0" layoutX="186.0" layoutY="255.0" startX="-100.0" stroke="#0000007a" styleClass="card-unpadded" />
+            <Label layoutX="80.0" layoutY="299.0" prefHeight="35.0" prefWidth="354.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css" text="Printo Termient e Sotit" textFill="#40b6f3">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Pane layoutX="80.0" layoutY="348.0" prefHeight="103.0" prefWidth="354.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+               <children>
+                  <JFXComboBox focusColor="#389496" layoutX="99.0" layoutY="52.0" prefHeight="31.0" prefWidth="140.0" unFocusColor="#389496" />
+                  <Label prefHeight="37.0" prefWidth="354.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css" text="Gjenero listen e pacientave per muajin:" textFill="#40b6f3">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="80.0" layoutY="462.0" prefHeight="103.0" prefWidth="354.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+               <children>
+                  <JFXComboBox focusColor="#389496" layoutX="99.0" layoutY="52.0" prefHeight="31.0" prefWidth="140.0" unFocusColor="#389496" />
+                  <Label prefHeight="37.0" prefWidth="354.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css" text="Gjenero Raportin e Pagesave per muajin" textFill="#40b6f3">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="541.0" layoutY="515.0" opacity="0.5" prefHeight="200.0" prefWidth="200.0" styleClass="card-unpadded" stylesheets="@../styles/styles.css">
+         <children>
+            <ImageView fitHeight="190.0" fitWidth="220.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" styleClass="card-unpadded">
+               <image>
+                  <Image url="@../images/reports.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

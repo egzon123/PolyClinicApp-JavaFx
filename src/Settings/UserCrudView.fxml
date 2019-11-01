@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTextField fx:id="Emr_txt" focusColor="#3eb981" labelFloat="true" layoutX="63.0" layoutY="62.0" prefHeight="31.0" prefWidth="212.0" promptText="Emri" unFocusColor="#3eb981" />
+      <JFXTextField fx:id="Mbiemri_txt" focusColor="#3eb981" labelFloat="true" layoutX="63.0" layoutY="132.0" prefHeight="31.0" prefWidth="212.0" promptText="Mbiemri" unFocusColor="#3eb981" />
+      <JFXDatePicker fx:id="dataPicker" layoutX="59.0" layoutY="209.0" prefHeight="31.0" prefWidth="220.0" promptText="Data e Lindjes" />
+      <JFXTextField fx:id="userName_txt" focusColor="#3eb981" labelFloat="true" layoutX="54.0" layoutY="333.0" prefHeight="31.0" prefWidth="212.0" promptText="User Name" unFocusColor="#3eb981" />
+      <JFXTextField fx:id="password_txt" focusColor="#3eb981" labelFloat="true" layoutX="56.0" layoutY="387.0" prefHeight="31.0" prefWidth="212.0" promptText="Password" unFocusColor="#3eb981" />
+      <JFXButton fx:id="ruajUserBtn" layoutX="50.0" layoutY="443.0" prefHeight="37.0" prefWidth="100.0" styleClass="green-btn" stylesheets="@../styles/styles.css" text="Ruaj" />
+      <JFXButton fx:id="editoUserBtn" layoutX="181.0" layoutY="443.0" prefHeight="37.0" prefWidth="100.0" styleClass="green-btn" stylesheets="@../styles/styles.css" text="Edito" />
+      <JFXComboBox fx:id="combo_privilegji" focusColor="#3eb981" layoutX="56.0" layoutY="274.0" prefHeight="31.0" prefWidth="212.0" promptText="Privilegji" unFocusColor="#3eb981" />
+   </children>
+</AnchorPane>

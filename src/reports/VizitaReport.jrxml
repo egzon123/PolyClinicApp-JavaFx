@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2ab1a2c7-7979-4673-b608-c41e2f7e051f">
+	<property name="ireport.zoom" value="2.1435888100000016"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="109"/>
+	<parameter name="dokName" class="java.lang.String"/>
+	<parameter name="tel" class="java.lang.String"/>
+        <parameter name="Image" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[Select * from Vizitat]]>
+	</queryString>
+	<field name="Emri_Pacientit" class="java.lang.String"/>
+	<field name="Mbiemri_Pacientit" class="java.lang.String"/>
+	<field name="Data_Lindjes" class="java.sql.Date"/>
+	<field name="Data_Vizites" class="java.sql.Date"/>
+	<field name="Ankesat_Pacientit" class="java.lang.String"/>
+	<field name="Vlersimi_Mjekut" class="java.lang.String"/>
+	<field name="Diagnoza" class="java.lang.String"/>
+	<field name="Terapia" class="java.lang.String"/>
+	<field name="Rekomandimi" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="148" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="69" width="130" height="20" uuid="60799885-d3e5-4c76-a6fd-6b61b30d8ab4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Raport i Mjekut]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="0" width="269" height="32" uuid="7ca222cd-28aa-4033-8813-fbdc452e9943"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Poliklinika "UBT"]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="111" width="100" height="20" uuid="72aba5b9-8419-46cd-9152-d082e079c2b5"/>
+				<text><![CDATA[Tel:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="402" y="111" width="100" height="20" uuid="57486fca-6ec9-4ba9-b8b5-06e38490805e"/>
+				<textFieldExpression><![CDATA[$P{tel}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="19" y="49" width="144" height="99" uuid="63a2113c-ff74-44f5-850e-7ed919fe6632"/>
+				<imageExpression><![CDATA[$P{Image}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="14" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="19" y="13" width="79" height="20" uuid="e0ea8c47-532c-4d07-b0e5-7e537c4e6fae"/>
+				<text><![CDATA[Emri Pacientit :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="89" y="13" width="100" height="20" uuid="d1ae78b1-5b51-49ed-9569-dc5f500b7f5b"/>
+				<textFieldExpression><![CDATA[$F{Emri_Pacientit}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="33" width="100" height="20" uuid="f3c79df1-d8ea-49f6-8c86-a46b4aa9ba26"/>
+				<text><![CDATA[Mbiemri Pacientit :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="101" y="33" width="100" height="20" uuid="82ca8990-de5f-442a-ae72-cc54371d71c3"/>
+				<textFieldExpression><![CDATA[$F{Mbiemri_Pacientit}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="53" width="79" height="20" uuid="d3ddbbfe-0331-4a53-b7b3-1632d126ffc8"/>
+				<text><![CDATA[Data e Lindjes :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="98" y="53" width="100" height="20" uuid="3741c6b8-dead-45a6-9c3f-f69bd73c3e6e"/>
+				<textFieldExpression><![CDATA[$F{Data_Lindjes}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="355" y="4" width="84" height="20" uuid="e2045ad9-1d58-4ec8-ad13-4ff82952537b"/>
+				<text><![CDATA[Data e Vizites :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="425" y="4" width="100" height="20" uuid="29ab5c1c-c5b6-42ba-b1bf-cfc81e0a5a1a"/>
+				<textFieldExpression><![CDATA[$F{Data_Vizites}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="3" width="539" height="1" uuid="57fe4881-a8bc-4b24-b843-e5a2d3c8518d"/>
+			</line>
+			<line>
+				<reportElement x="539" y="4" width="1" height="69" uuid="8c9b6b8c-b093-4bbb-b83c-d2465ab8f8d7"/>
+			</line>
+			<line>
+				<reportElement x="0" y="4" width="1" height="69" uuid="5e265b94-5f0a-404c-baa1-4a419ce317e5"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="315" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="77" width="98" height="20" uuid="c9b3be64-9d07-49e6-b28f-a6735ecb47c2"/>
+				<text><![CDATA[Ankesat e Pacientit :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="101" y="77" width="100" height="20" uuid="2466cae0-a49a-491d-9aa4-7aead4037c23"/>
+				<textFieldExpression><![CDATA[$F{Ankesat_Pacientit}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="137" width="89" height="20" uuid="e2aef15e-201f-4387-a819-43bb35bc3984"/>
+				<text><![CDATA[Vlersimi i Mjekut :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="89" y="137" width="100" height="20" uuid="9b12816d-bab5-4701-bd7f-c0be1126a026"/>
+				<textFieldExpression><![CDATA[$F{Vlersimi_Mjekut}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="194" width="55" height="20" uuid="f921b329-9398-4522-80f5-38dc4fb23f5d"/>
+				<text><![CDATA[Diagnoza :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="55" y="194" width="100" height="20" uuid="d2bfe1b9-79bd-463a-bffd-df5694795e4b"/>
+				<textFieldExpression><![CDATA[$F{Diagnoza}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="243" width="55" height="20" uuid="b6023718-1587-4cb0-a0bb-714a332d6453"/>
+				<text><![CDATA[Terapia :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="55" y="243" width="100" height="20" uuid="b313ba21-6858-40a1-b5f1-9e97ee777f88"/>
+				<textFieldExpression><![CDATA[$F{Terapia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="295" width="79" height="20" uuid="8fc46a6a-7f70-4825-86fa-ca43245655ad"/>
+				<text><![CDATA[Rekomandimi :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="295" width="100" height="20" uuid="377d4488-0c63-4add-9fb2-1d74ad4bf583"/>
+				<textFieldExpression><![CDATA[$F{Rekomandimi}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="539" height="1" uuid="4b4ae252-860e-45e6-8736-3dcb71753206"/>
+			</line>
+			<line>
+				<reportElement x="1" y="97" width="538" height="1" uuid="d883896c-83a5-4efb-b68d-ce82e4449ca1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="162" width="539" height="1" uuid="d0166592-5b03-40dc-966a-d68e96bfa757"/>
+			</line>
+			<line>
+				<reportElement x="0" y="214" width="539" height="2" uuid="a4829577-d209-4720-862f-70d592d838b0"/>
+			</line>
+			<line>
+				<reportElement x="0" y="273" width="539" height="4" uuid="ddb175a1-c6dc-4626-a377-685842f6cab3"/>
+			</line>
+			<line>
+				<reportElement x="1" y="314" width="538" height="1" uuid="a5b103dc-ea1f-4323-8053-274641125e45"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="344" y="0" width="41" height="20" uuid="5d0f6731-722c-4f15-be65-a14948c395ec"/>
+				<text><![CDATA[Mjeku : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="385" y="0" width="100" height="20" uuid="972cdcfc-930d-464e-8725-3a16729aaee5"/>
+				<textFieldExpression><![CDATA[$P{dokName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
